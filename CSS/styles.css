@@ -1,0 +1,482 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+p{
+   font-size: 5vmin;
+   font-weight: bold;
+   color: white;
+   
+}
+
+.gameResultContainer{
+    
+    max-width: 30vmin;
+    min-height: 25vmin;
+    border: rgb(87, 46, 46) solid 2px;
+    border-radius: 20px;
+    padding-left: -50px;
+    background-color:  rgb(2, 59, 31);
+    margin-top: -20vmin;
+    
+    margin-left: -47vmin;
+    
+}
+
+
+.playingBtns{
+    
+    font-size: 5vmin;
+    color: white;
+    border: solid 2px rgb(87, 46, 46);
+    border-radius: 20px;
+    background-color: rgb(2, 59, 31);
+    padding: 5px;
+
+}
+
+.playingBtns:hover{
+    
+    font-size: 5.5vmin;
+   
+}
+
+
+html {
+    
+   background-color: white;
+    
+}
+
+main {
+    
+    background-image: url(../Table/9999520.jpg);
+    margin: 0 auto;
+    max-width: 1500px;
+    min-height: auto;
+    margin-top: 1vmin;
+    border-radius: 20px;
+    border: solid 5px rgb(87, 46, 46);
+    
+}
+
+img{
+    height: 15vmin;
+    width: 20vmin;
+    cursor: pointer;
+    grid-column-start: 2;
+}
+
+.card {
+
+  --card-width: 100px;
+  margin-right: calc(3.5vmin - var(--card-width));
+  float: left;
+  width: var(--card-width);
+  height: calc(var(--card-width) * 1.5);
+ 
+}
+
+img:hover{
+    
+    height: 17vmin;
+    width: 22vmin;
+   
+}
+
+.cards{
+    
+    height: 27vmin;
+    width:  21vmin;
+    border-radius: 2.5vmin;
+    border: black 2px solid;
+    
+}
+
+div :first-child:hover{
+   
+    height: 28vmin;
+    width:  22vmin;
+    margin-right: -100px; 
+    float: left;  
+  transition: all 0.3s ease
+}
+
+
+
+
+
+.gameResultContainer:hover{
+    
+    min-width: 30vmin;
+    max-height: 20vmin;
+}
+
+.gameResultContainer > p{
+    
+     display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dealerCards{
+    
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-template-rows: 29vmin;
+    padding-top: 10px;
+    padding-left: 5vmin;
+    padding-top: 10px;
+    
+}
+
+.playerCalls{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 15vmin;
+    margin-top: 5px;
+    
+}
+
+.playerCards{
+    
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-template-rows: 29vmin;
+    padding-left: 5vmin;;
+    
+}
+
+.chips {
+
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    /* grid-template-rows: 150px; */
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    justify-items: center;
+    grid-template-rows: 17vmin;
+    
+
+}
+
+ul {
+    
+    list-style: none;
+   
+}
+
+.dealerCards  :nth-child(2) > div > img{
+    
+    content:url(../Cards/CardBack/backPattern.jpg);
+ 
+}
+
+#dealerCount, #playerCount{
+    padding-left: 14vmin;
+    font-size: 3.5vmin;
+}
+
+.allIn{
+   
+   margin-top: 2.5vmin;
+   grid-column: span 3;
+}
+
+button{
+    
+    font-size: 5vmin;
+    background-color: rgba(255, 0, 0, 0);
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+    margin: 5px;
+
+}
+
+button:hover{
+    
+    font-size: 5.5vmin;
+    
+}
+
+.dealBtn{
+    
+    grid-column-start: 2;
+}
+
+.playerMoney{
+    
+    grid-column-start: 7;
+    font-size: 5vmin;
+    font-weight: bold;
+    color: white;
+    padding-right: 1vmin;
+    
+}
+
+.chip{
+    
+    grid-column: span 1;
+    
+}
+
+.containerPlayer{
+    
+    grid-column-start: 2;
+
+}
+
+#containerDealer{
+
+    grid-column-start: 2;
+    
+}
+
+.resetBet{
+
+    cursor: pointer;
+
+}
+
+#resetBtn{
+    
+    color: white;
+    border: solid rgb(87, 46, 46) 3px;
+    border-radius: 10px;
+    margin-left: 10vmin;
+    padding: 1px;
+    background-color: rgb(2, 59, 31);
+      
+}
+
+#resetBtn:hover{
+    
+    font-size: 42px;
+    
+}
+
+.chipsBetContainer{
+    
+    margin-left: 150px;
+    margin-top: 25px;
+    
+}
+
+
+.chipsBetDisplay{
+    
+    display: inline-flex;
+    margin-top: 25px;
+    
+}
+
+
+.chipsBetDisplay :hover{
+    
+    all: unset;
+
+}
+
+.chipsBetDisplay :nth-child(3):hover{
+
+    height: 15vmin;
+    width: 20vmin;
+    
+}
+
+.chipsBetDisplay :nth-child(2):hover{
+
+    height: 15vmin;
+    width: 20vmin;
+
+}
+
+.chipsBetDisplay :nth-child(1):hover{
+
+    height: 15vmin;
+    width: 20vmin;
+}
+
+.chipsBetDisplay :nth-child(1){
+
+    z-index: -1;
+
+}
+
+.chipsBetDisplay :nth-child(2){
+
+    margin-top: 5vmin;
+    margin-left: -15vmin;
+    z-index: -1;
+
+}
+
+.chipsBetDisplay :nth-child(3){
+    
+    margin-left: -15vmin;
+    z-index: -1;
+ 
+}
+
+.gameEndContainer{
+
+    min-width: 50vmin;
+    min-height: 50vmin;
+    /* border: rgb(87, 46, 46) solid 2px;
+    border-radius: 20px;
+    padding-left: 75px;
+    background-color:  rgb(2, 59, 31); */
+    margin-top: -15vmin;
+    margin-left: -7vmin;
+    
+}
+
+
+.resetBet:hover{
+    
+    cursor: pointer;
+    
+}
+
+
+#cardsImg{
+    width: 10vmin;
+    height: 10vmin;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+#cardDeckCount{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    margin-top: 10vmin;
+    margin-left: 4vmin;
+}
+
+@media (max-width: 550px ) and (min-height: 560px){
+
+    div :first-child:hover{
+   
+    height: 28vmin;
+    width:  22vmin;
+    margin-right: -50px;
+    z-index: 100; 
+    float: left;  
+    transition: all 0.3s ease
+
+    }
+
+   main{
+
+    min-height: 500px;
+    margin-top: 10vmin;
+    
+   }
+
+   .playerCalls{
+    
+     margin-top: 30vmin;
+
+    }
+
+    .dealerCards{
+
+        margin-top: 20vmin;
+    }
+
+    .allIn{
+   
+   margin-top: -3vmin;
+   
+    }
+}  
+
+ @media ( max-height: 559px) {
+
+    div :first-child:hover{
+   
+    height: 28vmin;
+    width:  22vmin;
+    margin-right: -50px;
+    z-index: 100; 
+    float: left;  
+    transition: all 0.3s ease
+
+    }
+
+   main{
+
+    max-height: 500px;
+    margin-top: 1vmin;
+    
+   }
+
+   .playerCalls{
+    
+     margin-top: 0vmin;
+
+    }
+
+    .dealerCards{
+
+        margin-top: 1vmin;
+    }
+
+    .allIn{
+   
+   margin-top: -2vmin;
+   
+}
+   
+
+}  
+
+@media ( max-height: 560px) {
+
+    div :first-child:hover{
+    
+    height: 28vmin;
+    width:  22vmin;
+    margin-right: -50px;
+    z-index: 100; 
+    float: left;  
+    transition: all 0.3s ease
+
+    }
+
+   main{
+    
+    max-height: 500px;
+    margin-top: 1vmin;
+    
+   }
+
+   .playerCalls{
+    
+     margin-top: 0vmin;
+    }
+
+    .dealerCards{
+        margin-top: 1vmin;
+    }
+
+    .allIn{
+   
+   margin-top: -2vmin;
+   
+}
+
+
+   
+
+}  
