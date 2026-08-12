@@ -495,10 +495,27 @@ button:hover{
    
 }
 
-
-   
-
 }  
+
+@media (max-width: 900px) and (orientation: landscape) {
+    /* Shrink spacing and text so it fits the short screen */
+    body, html {
+        height: 100%;
+        overflow: hidden; /* Prevents scrolling if you want a fixed game screen */
+    }
+
+    /* Shrink your result container padding */
+    .gameResultContainer > p {
+        padding: 4px 0; 
+        font-size: 0.9rem; /* Slightly smaller text */
+    }
+
+    /* Example: Reduce margins on your main game container */
+    .your-main-container-class {
+        margin: 5px auto;
+        padding: 10px;
+    }
+}
 
 
 
