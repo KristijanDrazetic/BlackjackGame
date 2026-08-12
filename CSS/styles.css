@@ -133,16 +133,16 @@ div :first-child:hover{
     justify-content: center;
     align-items: center;
     
-    /* 1. Stop Chrome from randomly resizing your text */
+   
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
     
-    /* 2. Force full width and center the internal inline text alignment */
+    
     width: 100%;
     text-align: center;
     
-    /* 3. Give vertical breathing room for align-items to actually work */
-    padding: 10px 0; 
+   
+    padding: 5px 0; 
 }
 
 .dealerCards{
