@@ -460,7 +460,7 @@ button:hover{
 
 }  
 
-@media ( max-height: 560px) {
+/* @media ( max-height: 560px) {
 
     div :first-child:hover{
     
@@ -495,25 +495,15 @@ button:hover{
    
 }
 
-}  
+}   */
 
-@media (max-width: 900px) and (orientation: landscape) {
-    /* Shrink spacing and text so it fits the short screen */
-    body, html {
-        height: 100%;
-        overflow: hidden; /* Prevents scrolling if you want a fixed game screen */
-    }
-
-    /* Shrink your result container padding */
-    .gameResultContainer > p {
-        padding: 4px 0; 
-        font-size: 0.9rem; /* Slightly smaller text */
-    }
-
-    /* Example: Reduce margins on your main game container */
-    .your-main-container-class {
-        margin: 5px auto;
-        padding: 10px;
+@media (max-width: 950px) and (orientation: landscape) {
+    .your-container-class {
+        /* Change from 500px to a percentage of the screen height */
+        max-height: 90vh !important; 
+        
+        /* Optional: Allow it to shrink smaller if the content fits */
+        height: auto !important; 
     }
 }
 
