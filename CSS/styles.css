@@ -460,7 +460,7 @@ button:hover{
 
 }  
 
-/* @media ( max-height: 560px) {
+@media ( max-height: 560px) {
 
     div :first-child:hover{
     
@@ -475,18 +475,22 @@ button:hover{
 
    main{
     
-    max-height: 500px;
+    max-height: 90vh;
     margin-top: 1vmin;
     
    }
 
+   body{
+   max-height: 500px;
+   }
+
    .playerCalls{
     
-     margin-top: 0vmin;
+     margin-top: -4vmin;
     }
 
     .dealerCards{
-        margin-top: 1vmin;
+        margin-top: -1vmin;
     }
 
     .allIn{
@@ -495,17 +499,12 @@ button:hover{
    
 }
 
-}   */
 
-@media (max-width: 950px) and (orientation: landscape) {
-    .your-container-class {
-        /* Change from 500px to a percentage of the screen height */
-        max-height: 90vh !important; 
-        
-        /* Optional: Allow it to shrink smaller if the content fits */
-        height: auto !important; 
-    }
-}
+   
+
+}  
+
+
 
 
 
