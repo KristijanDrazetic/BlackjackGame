@@ -367,7 +367,7 @@ button:hover{
     margin-left: 4vmin;
 }
 
-@media (max-width: 550px ) and (min-height: 560px){
+/* @media (max-width: 550px ) and (min-height: 560px){
 
     div :first-child:hover{
    
@@ -484,3 +484,40 @@ button:hover{
    
 
 }  
+ */
+
+@media (max-width: 768px) {
+
+    /* FIX: Remove the space so it targets the actual element, 
+       and target cards by class instead of all universal first-child divs */
+    .card:first-child:active, 
+    .cards:first-child:active {
+        height: 28vmin;
+        width: 22vmin;
+        margin-right: -50px;
+        z-index: 100; 
+        float: left;  
+        transition: all 0.3s ease;
+    }
+
+    main {
+        /* Avoid hard pixel max-heights on main layouts so content doesn't spill out */
+        min-height: auto; 
+        margin-top: 15px; 
+        padding: 10px;
+    }
+
+    /* FIX: Switch from vmin margins to standard percentages or auto-margins 
+       so portrait phone orientation doesn't squeeze elements together */
+    .playerCalls {
+        margin-top: 5%;
+    }
+
+    .dealerCards {
+        margin-top: 5%;
+    }
+
+    .allIn {
+        margin-top: 10px;
+    }
+}
