@@ -480,17 +480,15 @@ button:hover{
     
    }
 
-   body{
-   max-height: 500px;
-   }
+   
 
    .playerCalls{
     
-     margin-top: -4vmin;
+     margin-top: 0vmin;
     }
 
     .dealerCards{
-        margin-top: -1vmin;
+        margin-top: 1vmin;
     }
 
     .allIn{
