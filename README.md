@@ -5,9 +5,15 @@ This project was built to demonstrate complex game logic and dynamic DOM manipul
 
 Live Demo: https://kristijandrazetic.github.io/BlackjackGame/
 
-- State Tracking: Managing complex states such as standard deck arrays, player/dealer scores, active bets, and total budget.
-- Event-Driven Architecture: Handling user inputs cleanly through structured DOM event listeners.
-- Conditional Logic: Evaluating winning conditions (Bust, Blackjack, Dealer wins, Push) through strict conditional rules.
+
+Key Features:
+  - State Tracking: Managing complex states such as standard deck arrays, player/dealer scores, active bets, and total budget.
+  - Event-Driven Architecture: Handling user inputs cleanly through structured DOM event listeners.
+  - Conditional Logic: Evaluating winning conditions (Bust, Blackjack, Dealer wins, Push) through strict conditional rules.
+
+Technologies Used:
+  - Frontend: JavaScript (ES6+), HTML5, CSS3
+
 
 To run this project locally on your machine follow these simple steps:
   1. Download the project:
