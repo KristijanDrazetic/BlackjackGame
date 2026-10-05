@@ -388,7 +388,7 @@ function displayGameLost(){
 
 
   function leaveGame(){
-    window.open('','_self').close()
+   window.location.href = "https://kristijandrazetic.github.io/BlackjackGame/"
 
   }
 
